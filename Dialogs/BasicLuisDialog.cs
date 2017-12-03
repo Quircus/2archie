@@ -31,5 +31,14 @@ namespace Microsoft.Bot.Sample.LuisBot
             await context.PostAsync($"You have reached the MyIntent intent. You said: {result.Query}"); //
             context.Wait(MessageReceived);
         }
-    }
+
+		// Go to https://luis.ai and create a new intent, then train/publish your luis app.
+		// Finally replace "MyIntent" with the name of your newly created intent in the following handler
+		[LuisIntent("ReserveRoom")]
+		public async Task ReserveRoomIntent(IDialogContext context, LuisResult result)
+		{
+			await context.PostAsync($"You have reached the ReserveRoom intent. You said: {result.Query}"); //
+			context.Wait(MessageReceived);
+		}
+	}
 }
