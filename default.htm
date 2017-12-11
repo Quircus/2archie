@@ -5,17 +5,34 @@
     <meta charset="utf-8" />
 </head>
 <body style="font-family:'Segoe UI'">
-    <h1>LuisBot Template Modified by S Nicholson</h1>
-    <p>A college project test bot that uses the Cognitive Services LUIS API to determine which simple services to deliver over chat channels. </p>
-    <p>Here are some handy links to get started:</p>
+    <h1>2Archie Hotel Concierge Bot</h1>
+	<h3>S Nicholson X00133895 IT Tallaght</h3>
+    <p>- A college project test bot that uses the Cognitive Services LUIS API to determine which simple services to deliver over chat channels. </p>
+	<p>The bot is hosted in Azure. GitHub is used for both version control and continuous deployment. Development in Visual Studio 2017 IDE is pushed to a GitHub repository that alerts Azure to pull the new version as it becomes available.</p>
+    <p>The bot itself operates through the Bot Framework Bot Connector to handle interaction with messaging channels. It takes a natural language query and leverages the LUIS Cognitive Services.</p>
+	<p>A trained LUIS API interprets the user post and returns an Intent and Entity to the bot (as properties of serializable objects in the form of raw JSON data), which is used to determine response: for instance, the intent that the user wishes to perform a search using the Entity keyword.</p>
+	<p>Search queries and CRUD are conducted upon a remote SQL database, via LINQ, also hosted in Azure and operating independently as a service back-end. The query data returned to the bot is then presented in a rich card carousel format. </p>
+	<p>The rooms for this fantasy hotel are taken from the Waldorf, the Marriot, Cunard Liners and others, and PNGs are hosted on imgur:</p>
     <p>
         <ul>
-            <li><a href="https://docs.microsoft.com/en-us/bot-framework/dotnet/bot-builder-dotnet-overview">Get started building bots with .NET.</a></li>
-            <li><a href="https://docs.microsoft.com/en-us/bot-framework/cognitive-services-bot-intelligence-overview#language-understanding">Learn more about LUIS and the Cognitive Services.</a></li>
-            <li><a href="https://www.luis.ai">Visit the LUIS portal.</a></li>
-            <li><a href="https://docs.microsoft.com/en-us/bot-framework/azure/azure-bot-service-continuous-deployment#set-up-continuous-deployment">Get the bot code and setup continuous deployment.</a></li>
-            <li><a href="https://docs.microsoft.com/en-us/bot-framework/debug-bots-emulator">Debug your bot.</a></li>
+			<li><a href="https://i.imgur.com/GkfJ9EJ.png">Accordia</a>
+			<li><a href="https://i.imgur.com/xmSlofT.png">Balthazar</a>
+			<li><a href="https://i.imgur.com/9E6MmsS.png">Cunardia</a>
+			<li><a href="https://i.imgur.com/0Licvx8.png">Demeter</a>
+			<li><a href="https://i.imgur.com/JHlsefr.png">Elegia</a>
+			<li><a href="https://i.imgur.com/0bNL76b.png">Fervidium</a>
+			<li><a href="https://i.imgur.com/NpTQXdv.png">Gershwin</a>
+			<li><a href="https://i.imgur.com/cpvxs4x.png">Heidelberg</a>
+			<li><a href="https://i.imgur.com/Ua6zqUx.png">Irwin Allen</a>
+			<li><a href="https://i.imgur.com/NEI17Jf.png">J-Stop Pods</a>
         </ul>
     </p>
+	<p>Other useful links:</p>
+	<p>
+		<ul>
+			<li><a href="https://www.luis.ai/home">LUIS Cognitive Services</a>
+			<li><a href="https://docs.microsoft.com/en-us/bot-framework/debug-bots-emulator">Bot Framework Emulator</a>
+		</ul>
+	</p>
 </body>
 </html>
