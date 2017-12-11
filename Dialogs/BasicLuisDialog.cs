@@ -16,14 +16,14 @@ namespace Microsoft.Bot.Sample.LuisBot
 
 	// I remove the following when I'm pushing to Azure, which applies Luis keys privately through a config manager.
 	// I need to use the keys directly when I'm testing locally on localhost:3984 but still want to access my trained LUIS services.
-	[LuisModel("e5ffc9ee-42af-4dad-9833-1ad6ded1ba09", "4a9bf25a264448128c3d033bc46b0b3b")]
+	//[LuisModel("e5ffc9ee-42af-4dad-9833-1ad6ded1ba09", "4a9bf25a264448128c3d033bc46b0b3b")]
 
 	[Serializable]
     public class BasicLuisDialog : LuisDialog<object>
     {
-		//public BasicLuisDialog() : base(new LuisService(new LuisModelAttribute(ConfigurationManager.AppSettings["LuisAppId"], ConfigurationManager.AppSettings["LuisAPIKey"])))
-		//{
-		//}
+		public BasicLuisDialog() : base(new LuisService(new LuisModelAttribute(ConfigurationManager.AppSettings["LuisAppId"], ConfigurationManager.AppSettings["LuisAPIKey"])))
+		{
+		}
 
 		private static IList<Attachment> GetCardsAttachments(IQueryable cards)
 		{
