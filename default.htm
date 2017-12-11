@@ -11,7 +11,7 @@
 	<p>The bot is hosted in Azure. GitHub is used for both version control and continuous deployment. Development in Visual Studio 2017 IDE is pushed to a GitHub repository that alerts Azure to pull the new version as it becomes available.</p>
     <p>The bot itself operates through the Bot Framework Bot Connector to handle interaction with messaging channels. It takes a natural language query and leverages the LUIS Cognitive Services.</p>
 	<p>A trained LUIS API interprets the user post and returns an Intent and Entity to the bot (as properties of serializable objects in the form of raw JSON data), which is used to determine response: for instance, the intent that the user wishes to perform a search using the Entity keyword.</p>
-	<p>Search queries and CRUD are conducted upon a remote SQL database, via LINQ, also hosted in Azure and operating independently as a service back-end. The query data returned to the bot is then presented in a rich card carousel format. </p>
+	<p>Search queries and CRUD are conducted upon a remote SQL database, with LINQ, also hosted in Azure and operating independently as a service back-end. The query data returned to the bot is then presented in a rich card carousel format. </p>
 	<p>The rooms for this fantasy hotel are taken from the Waldorf, the Marriot, Cunard Liners and others, and PNGs are hosted on imgur:</p>
     <p>
         <ul>
